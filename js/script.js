@@ -1,7 +1,5 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+var argButtonName, buttonPaper, buttonRock, buttonScissors;
 
-buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
 buttonPaper = document.getElementById('button-paper');
