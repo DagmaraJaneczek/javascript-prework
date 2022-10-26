@@ -1,21 +1,12 @@
-let argButtonName, playerInput, randomNumber, playerMove, computerMove, argPlayerMove, argComputerMove;
-
-function buttonClicked(argButtonName) {
+function buttonClicked(playerMove) {
   clearMessages();
-  console.log(argButtonName + ' został kliknięty');
-  playerMove = argButtonName;
-  console.log('wybór ruchu gracza to: ' + playerInput);
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-  console.log('ruch gracza to: ' + playerMove);
-  randomNumber = Math.floor(Math.random() * 3 + 1);
-  console.log('wylosowana liczba to: ' + randomNumber);
-  computerMove = getMoveName(randomNumber);
-  console.log('ruch komputera to: ' + computerMove);
+
+  const randomNumber = Math.floor(Math.random() * 3 + 1);
+  const computerMove = getMoveName(randomNumber);
+  printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
+  
   displayResult(playerMove, computerMove);
 }
-
-
-let argMoveId;
 
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
