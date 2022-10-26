@@ -25,13 +25,8 @@ function getMoveName(argMoveId) {
     return 'papier';
   } else if (argMoveId == 3) {
     return 'nożyce';
-  } else {
-    printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
-    return 'kamień';
-  }
+  } 
 }
-
-// Game results
 
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
