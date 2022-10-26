@@ -1,11 +1,14 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors;
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
-buttonPaper = document.getElementById('button-paper');
+
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
-buttonScissors = document.getElementById('button-scissors');
+
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+
+let argButtonName, playerInput
 
 function buttonClicked(argButtonName) {
   clearMessages();
@@ -22,7 +25,7 @@ function buttonClicked(argButtonName) {
 }
 
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+var argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNumber;
 
 
 function getMoveName(argMoveId) {
