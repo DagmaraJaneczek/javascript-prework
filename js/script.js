@@ -8,7 +8,8 @@ buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
 const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
 
-let argButtonName, playerInput
+
+let argButtonName, playerInput, randomNumber, playerMove, computerMove, argPlayerMove, argComputerMove;
 
 function buttonClicked(argButtonName) {
   clearMessages();
@@ -25,8 +26,7 @@ function buttonClicked(argButtonName) {
 }
 
 
-var argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNumber;
-
+let argMoveId;
 
 function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
@@ -42,6 +42,7 @@ function getMoveName(argMoveId) {
   }
 }
 
+// Game results
 
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
