@@ -1,14 +1,3 @@
-
-const buttonRock = document.getElementById('button-rock');
-buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
-
-const buttonPaper = document.getElementById('button-paper');
-buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
-
-const buttonScissors = document.getElementById('button-scissors');
-buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
-
-
 let argButtonName, playerInput, randomNumber, playerMove, computerMove, argPlayerMove, argComputerMove;
 
 function buttonClicked(argButtonName) {
@@ -58,4 +47,15 @@ function displayResult(argPlayerMove, argComputerMove) {
     printMessage('Przegrywasz :(');
   }
 }
+
+const buttonRock = document.getElementById('button-rock');
+buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
+
+const buttonPaper = document.getElementById('button-paper');
+buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
+
+const buttonScissors = document.getElementById('button-scissors');
+buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+
+
 
