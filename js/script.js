@@ -1,3 +1,5 @@
+'use strict';
+
 function buttonClicked(playerMove) {
   clearMessages();
 
@@ -5,7 +7,7 @@ function buttonClicked(playerMove) {
   const computerMove = getMoveName(randomNumber);
   printMessage('Zagrałem ' + computerMove + ', a Ty ' + playerMove);
   
-  displayResult(playerMove, computerMove);
+  displayResult(playerMove.toLowerCase(), computerMove);
 }
 
 function getMoveName(argMoveId) {
@@ -19,8 +21,8 @@ function getMoveName(argMoveId) {
   } 
 }
 
+
 function displayResult(argPlayerMove, argComputerMove) {
-  console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
