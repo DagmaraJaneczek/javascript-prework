@@ -37,13 +37,13 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 const buttonRock = document.getElementById('button-rock');
-buttonRock.addEventListener('click', function(){ buttonClicked('Kamień'); });
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 
 const buttonPaper = document.getElementById('button-paper');
-buttonPaper.addEventListener('click', function(){ buttonClicked('Papier'); });
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 
 const buttonScissors = document.getElementById('button-scissors');
-buttonScissors.addEventListener('click', function(){ buttonClicked('Nożyce'); });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
 
 
